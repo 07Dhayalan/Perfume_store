@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Users</title>
+  <link rel="stylesheet" href="../static/css/users.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <h2 class="logo">WatchAdmin</h2>
+      <ul class="nav">
+        <li>Dashboard</li>
+        <li>Orders</li>
+        <li>Products</li>
+        <li class="active">Users</li>
+        <li>Messages</li>
+        <li>Settings</li>
+        <li>Logout</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <input type="text" id="searchUserInput" placeholder="Search users..." class="search-input" />
+        <button id="addUserBtn" class="btn">Add User</button>
+      </header>
+
+      <section class="user-table">
+        <h3>User List</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="userTbody"></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="../static/js/users.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../static/css/admin.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <h2 class="logo">Watch Admin</h2>
+      <ul class="nav">
+        <li class="active">Dashboard</li>
+        <li>Orders</li>
+        <li>Products</li>
+        <li>Users</li>
+        <li>Messages</li>
+        <li>Settings</li>
+        <li>Logout</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <input type="text" placeholder="Search..." class="search-input" />
+        <div class="topbar-icons">
+          <span class="notification"></span>
+          <span class="avatar"></span>
+        </div>
+      </header>
+
+      <section class="overview">
+        <div class="card">
+          <h3>Total Sales</h3>
+          <p>$21,420</p>
+        </div>
+        <div class="card">
+          <h3>Orders</h3>
+          <p>320</p>
+        </div>
+        <div class="card">
+          <h3>Customers</h3>
+          <p>190</p>
+        </div>
+        <div class="card">
+          <h3>Revenue</h3>
+          <p>$58,000</p>
+        </div>
+      </section>
+
+      <section class="tables">
+        <div class="table-section">
+          <h3>Recent Orders</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Total</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1001</td>
+                <td>Jane Doe</td>
+                <td>2025-06-05</td>
+                <td>$150</td>
+                <td><span class="badge success">Completed</span></td>
+              </tr>
+              <tr>
+                <td>#1002</td>
+                <td>John Smith</td>
+                <td>2025-06-04</td>
+                <td>$300</td>
+                <td><span class="badge warning">Pending</span></td>
+              </tr>
+              <tr>
+                <td>#1003</td>
+                <td>Mary Jane</td>
+                <td>2025-06-03</td>
+                <td>$120</td>
+                <td><span class="badge danger">Cancelled</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

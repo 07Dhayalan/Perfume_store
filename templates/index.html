@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WatchZone</title>
+  <link rel="stylesheet" href="../static/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">WatchZone</div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search watches..." />
+    </div>
+    <div class="nav-icons">
+      <div title="User Profile">&#128100;</div>
+      <div title="Cart">&#128722;</div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul id="categoryList">
+        <li class="active" data-category="all">All Watches</li>
+        <li data-category="digital">Digital</li>
+        <li data-category="analog">Analog</li>
+        <li data-category="smart">Smart Watches</li>
+        <li data-category="luxury">Luxury</li>
+      </ul>
+    </aside>
+
+    <section class="watches-grid" id="watchesGrid">
+      <!-- Watch cards injected by JS -->
+    </section>
+  </div>
+
+  <script src="../static/js/main.js"></script>
+</body>
+</html>

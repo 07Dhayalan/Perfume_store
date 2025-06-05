@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orders - WatchAdmin</title>
+  <link rel="stylesheet" href="../static/css/orders.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <h2 class="logo">WatchAdmin</h2>
+      <ul class="nav">
+        <li>Dashboard</li>
+        <li class="active">Orders</li>
+        <li>Products</li>
+        <li>Users</li>
+        <li>Messages</li>
+        <li>Settings</li>
+        <li>Logout</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="orders-header">
+        <h1>Orders</h1>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search orders by customer or order ID..."
+          autocomplete="off"
+        />
+      </header>
+
+      <section class="orders-table-section">
+        <table class="orders-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer</th>
+              <th>Date</th>
+              <th>Total</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTbody">
+            <!-- Orders rows inserted by JS -->
+          </tbody>
+        </table>
+      </section>
+
+      <nav class="pagination">
+        <button id="prevPage" disabled>Previous</button>
+        <span id="pageInfo">Page 1 of 1</span>
+        <button id="nextPage" disabled>Next</button>
+      </nav>
+    </main>
+  </div>
+
+  <script src="../static/js/orders.js"></script>
+</body>
+</html>
